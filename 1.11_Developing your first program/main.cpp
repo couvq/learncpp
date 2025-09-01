@@ -1,8 +1,8 @@
 #include <iostream>
 
-void multiplyByTwo()
+void multiply_by_two()
 {
-    int x {};
+    int x{};
     std::cout << "Enter an integer: ";
     std::cin >> x;
     std::cout << "Double that number is: " << x * 2 << "\n";
@@ -10,5 +10,5 @@ void multiplyByTwo()
 
 int main()
 {
-    multiplyByTwo();
+    multiply_by_two();
 }
