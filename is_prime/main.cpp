@@ -3,10 +3,7 @@
 // determines whether a number is prime or not, assumes that number is a value between 1 and 10
 bool isPrime(int number)
 {
-    if (number == 2 || number == 3 || number == 5 || number == 7)
-        return true;
-    else
-        return false;
+    return number == 2 || number == 3 || number == 5 || number == 7;
 }
 
 int main()
