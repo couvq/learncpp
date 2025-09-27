@@ -1,6 +1,6 @@
 #include <iostream>
 
-double getUserInput()
+double getDouble()
 {
     std::cout << "Enter a double value: ";
     double input{};
@@ -8,7 +8,7 @@ double getUserInput()
     return input;
 }
 
-char getUserOperand()
+char getOperator()
 {
     std::cout << "Enter +, -, *, or /: ";
     char input{};
@@ -39,9 +39,9 @@ void printResult(double x, double y, char operand)
 
 int main()
 {
-    double x{getUserInput()};
-    double y{getUserInput()};
-    char operand{getUserOperand()};
+    double x{getDouble()};
+    double y{getDouble()};
+    char operand{getOperator()};
     printResult(x, y, operand);
     return 0;
 }
