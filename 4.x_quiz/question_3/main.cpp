@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+const double gravityConstant{9.8}; // m/s^2
+
 int getHeight()
 {
     std::cout << "Enter the height of the tower in meters: ";
@@ -11,7 +13,6 @@ int getHeight()
 
 void printDistanceFallen(int initialHeight, int deltaTime)
 {
-    double gravityConstant{9.8};                                        // m/s^2
     double distanceFallen{gravityConstant * deltaTime * deltaTime / 2}; // m
     double heightRemaining{initialHeight - distanceFallen};             // m
     if (distanceFallen >= initialHeight)
